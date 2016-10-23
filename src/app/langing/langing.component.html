@@ -1,0 +1,22 @@
+<div class="row" *ngFor="let phrase of phrases">
+  <div class="col-md-1">
+    {{phrase?.id}}
+  </div>
+  <div class="col-md-2">
+    {{phrase?.ru}}
+  </div>
+  <div class="col-md-2">
+    {{phrase?.pl}}
+  </div>
+  <div class="col-md-2">
+    sound
+  </div>
+  <div class="col-md-3">
+    <span *ngFor="let tag of phrase.tags">
+      <span class="label label-info" >{{tag}}</span>&nbsp;
+    </span>
+  </div>
+  <div class="col-md-2">
+    actions
+  </div>
+</div>
